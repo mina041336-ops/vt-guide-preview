@@ -1,0 +1,885 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>NOT BLACKHEADS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Karla:wght@400;500;600;700&display=swap">
+<style>
+
+  /* 기본 테마: 리들샷 민트. 제품 yaml theme 으로 덮어쓴다 */
+  :root{
+    --silver:#E7EBEC; --white:#FFFFFF; --off:#F5F8F8;
+    --ink:#1B2426; --ink-2:#3E4B4E; --ink-3:#6E7D7C;
+    --mint:#2FC0BC; --mint-ink:#0A6A67; --mint-soft:#DEF4F3; --mint-line:#A9E2DF;
+    --red:#C7392A; --red-ink:#A0301F; --red-soft:#FCEBE7; --red-line:#F0BCB0;
+    --green:#1A7C45; --green-soft:#E6F4EB; --green-line:#B6DEC6;
+    --black:#141A1B;
+    --line:#D7DDDF;
+    --chrome:linear-gradient(135deg,#F7F9F9 0%,#DCE3E5 38%,#FFFFFF 52%,#CFD8DA 70%,#EFF3F3 100%);
+    --display:"Poppins",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    --body:"Karla",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    --r:18px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--silver);
+       background-image:linear-gradient(180deg,#EEF1F2 0%,#E3E9EA 44%,#DDE4E6 100%);
+       background-attachment:fixed;
+       color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;
+       -webkit-font-smoothing:antialiased}
+  .page{max-width:1080px;margin:0 auto;padding-inline:clamp(16px,3.5vw,40px);padding-block:0 20px}
+
+  .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(18px,3vw,44px);
+        align-items:center;padding-block:clamp(26px,4vw,54px) clamp(18px,2.5vw,30px)}
+  @media(max-width:860px){.hero{grid-template-columns:1fr;gap:22px}}
+  .brandmark{display:flex;align-items:center;margin-bottom:clamp(20px,4vw,48px)}
+  .brandmark img{display:block;height:clamp(19px,2.4vw,25px);width:auto;opacity:.85}
+  .footmark{display:flex;justify-content:center;margin:0 0 14px}
+  .footmark img{display:block;height:17px;width:auto;opacity:.45}
+  .kicker{font-family:var(--display);font-weight:600;font-size:clamp(11px,1.1vw,12.5px);
+          letter-spacing:.16em;text-transform:uppercase;color:var(--mint-ink);margin:0 0 13px}
+  h1{font-family:var(--display);font-weight:700;font-size:clamp(30px,4.4vw,50px);line-height:1.03;
+     letter-spacing:-.025em;margin:0;color:var(--ink);text-wrap:balance}
+  h1 i{font-style:normal;color:var(--mint-ink)}
+  .sub{font-family:var(--body);font-size:clamp(16px,1.6vw,19px);line-height:1.5;color:var(--ink-2);margin:16px 0 0;max-width:40ch}
+  .facts{display:flex;gap:8px;flex-wrap:wrap;list-style:none;padding:0;margin:24px 0 0}
+  .facts li{font-family:var(--display);font-weight:600;font-size:11px;letter-spacing:.1em;
+            text-transform:uppercase;color:var(--ink-2);background:var(--white);
+            border:1px solid var(--line);border-radius:999px;padding:6px 13px}
+  .heroshot{background:var(--chrome);border-radius:var(--r);padding:clamp(11px,1.6vw,16px);
+            margin:0;box-shadow:0 1px 0 #FFFFFF inset,0 8px 22px rgba(30,45,48,.09)}
+  .heroshot video{display:block;width:auto;max-width:100%;max-height:clamp(320px,42vw,460px);aspect-ratio:9/16;border-radius:10px;margin-inline:auto;background:#000}
+  .heroshot img{display:block;width:auto;max-width:100%;max-height:clamp(260px,34vw,380px);height:auto;border-radius:10px;margin-inline:auto}
+  .chromerule{height:2px;border-radius:2px;margin:0 0 clamp(20px,3vw,30px);
+              background:linear-gradient(90deg,#CBD4D6 0%,#FFFFFF 22%,#B7C3C5 50%,#FFFFFF 78%,#CBD4D6 100%)}
+
+  section{margin-top:clamp(34px,4.6vw,60px)}
+  .sh{display:flex;align-items:center;gap:11px;margin:0 0 14px;flex-wrap:wrap}
+  .sh .n{font-family:var(--display);font-weight:800;font-size:12px;letter-spacing:.1em;
+         color:var(--mint-ink);background:var(--mint-soft);border:1px solid var(--mint-line);
+         border-radius:999px;padding:5px 11px;font-variant-numeric:tabular-nums;flex:none}
+  .sh b{font-family:var(--display);font-weight:800;font-size:clamp(20px,2.7vw,29px);
+        line-height:1.1;letter-spacing:-.02em;color:var(--ink);text-transform:uppercase}
+  .lede{margin:0 0 15px;font-size:16px;color:var(--ink-2);max-width:70ch}
+  .lede b{color:var(--ink);font-weight:700}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:var(--r);
+        padding:clamp(18px,2.4vw,26px)}
+
+  .co{border-radius:var(--r);padding:clamp(18px,2.3vw,26px);display:flex;gap:14px;align-items:flex-start}
+  .co em{font-style:normal;font-size:20px;line-height:1.2;flex:none}
+  .co p{margin:0 0 9px;font-size:16px}
+  .co p:last-child{margin-bottom:0}
+  .co.rule{background:var(--mint-soft);border:1px solid var(--mint-line)}
+  .co.rule .big{font-family:var(--display);font-weight:600;font-size:clamp(17px,1.9vw,21px);
+                line-height:1.4;color:var(--ink)}
+  .co.rule .why{color:var(--ink-2);font-size:15.5px}
+  .co .lab{font-family:var(--display);font-weight:700;font-size:11px;letter-spacing:.13em;
+           text-transform:uppercase;color:var(--mint-ink);display:block;margin-bottom:6px}
+  .track{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:14px 0 0;
+         font-family:var(--display);font-weight:700;font-size:10.5px;letter-spacing:.11em;
+         text-transform:uppercase;color:var(--mint-ink)}
+  .track s{text-decoration:none;white-space:nowrap}
+  .track i{width:15px;height:1px;background:currentColor;opacity:.45;font-style:normal;flex:none}
+
+  .lanepick{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:0 0 16px;
+            background:var(--mint-soft);border:1.5px dashed var(--mint-line);border-radius:var(--r);
+            padding:14px 16px}
+  .lanepick .lab{font-family:var(--display);font-weight:700;font-size:11px;letter-spacing:.13em;
+                 text-transform:uppercase;color:var(--mint-ink);margin:0}
+  .lanehint{flex-basis:100%;margin:3px 0 0;font-family:var(--display);font-weight:700;
+            font-size:13.5px;line-height:1.45;color:var(--mint-ink)}
+  button.lb{font-family:var(--display);font-weight:700;font-size:11.5px;letter-spacing:.08em;
+            text-transform:uppercase;padding:9px 17px;border-radius:999px;cursor:pointer;
+            border:1.5px solid var(--mint);background:var(--white);color:var(--mint-ink);
+            transition:background .15s,color .15s,border-color .15s,transform .12s}
+  .lanepick:not(.chosen) button.lb{animation:tapme 2.4s ease-in-out infinite}
+  .lanepick:not(.chosen) button.lb:nth-of-type(2){animation-delay:.35s}
+  .lanepick:not(.chosen) button.lb:nth-of-type(3){animation-delay:.7s}
+  @keyframes tapme{0%,100%{box-shadow:0 0 0 0 rgba(47,192,188,.5)}
+                   55%{box-shadow:0 0 0 7px rgba(47,192,188,0)}}
+  button.lb:hover{background:var(--mint-ink);border-color:var(--mint-ink);color:#FFFFFF;transform:translateY(-1px)}
+  button.lb:active{transform:translateY(0)}
+  button.lb:focus-visible{outline:2px solid var(--mint-ink);outline-offset:2px}
+  button.lb[aria-pressed="true"]{background:var(--mint-ink);border-color:var(--mint-ink);color:#FFFFFF}
+  .lanepick:not(.chosen) button.lclear{display:none}
+  button.lclear{font-family:var(--display);font-weight:600;font-size:10.5px;letter-spacing:.08em;
+                text-transform:uppercase;background:none;border:0;color:var(--ink-3);cursor:pointer;
+                padding:7px 4px;text-decoration:underline;text-underline-offset:3px}
+  button.lclear:focus-visible{outline:2px solid var(--mint-ink);outline-offset:2px}
+
+  .lanes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,1.8vw,18px)}
+  @media(max-width:860px){.lanes{grid-template-columns:1fr}}
+  .lane{background:var(--white);border:1px solid var(--line);border-radius:var(--r);
+        overflow:hidden;transition:opacity .2s,border-color .2s}
+  .lane .lhead{background:var(--off);border-bottom:1px solid var(--line);
+               padding:11px clamp(15px,2vw,20px);display:flex;align-items:center;gap:9px;
+               flex-wrap:wrap;font-family:var(--display);font-weight:700;font-size:13px;
+               letter-spacing:.02em;color:var(--ink)}
+  .lane .lbody{padding:clamp(15px,2vw,20px);display:flex;flex-direction:column;gap:13px}
+  .lane p{margin:0;font-size:15px;color:var(--ink-2)}
+  .shape{display:block;background:var(--off);border-left:3px solid var(--mint);
+         border-radius:0 9px 9px 0;padding:11px 14px}
+  .shape s{text-decoration:none;display:block;font-family:var(--display);font-weight:700;
+           font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);
+           margin-bottom:5px}
+  .shape q{font-family:var(--display);font-weight:600;font-size:15px;color:var(--ink);quotes:none}
+  .flag{display:none}
+  [data-lane="a"] .lane:not([data-id="a"]),
+  [data-lane="b"] .lane:not([data-id="b"]),
+  [data-lane="c"] .lane:not([data-id="c"]){opacity:.38}
+  [data-lane="a"] .lane[data-id="a"],
+  [data-lane="b"] .lane[data-id="b"],
+  [data-lane="c"] .lane[data-id="c"]{border-color:var(--mint)}
+  [data-lane="a"] .lane[data-id="a"] .flag,
+  [data-lane="b"] .lane[data-id="b"] .flag,
+  [data-lane="c"] .lane[data-id="c"] .flag{
+    display:inline-block;background:var(--mint-ink);color:#FFFFFF;border-radius:999px;
+    font-family:var(--display);font-weight:700;font-size:9px;letter-spacing:.12em;
+    text-transform:uppercase;padding:3px 9px}
+
+  .slotrow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin:0}
+  .slotrow.two{grid-template-columns:repeat(2,minmax(0,1fr));max-width:500px}
+  .slotrow.mid{margin-inline:auto}
+  @media(max-width:560px){.slotrow{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  .slot{margin:0;aspect-ratio:9/13;border-radius:13px;background:var(--black);
+        overflow:hidden;position:relative;max-width:100%}
+  .slot img{width:100%;height:100%;object-fit:cover;display:block}
+  .slot .cap{position:absolute;left:8px;top:8px;z-index:2;font-family:var(--display);
+             font-weight:700;font-size:10px;letter-spacing:.07em;text-transform:uppercase;
+             color:var(--ink);background:rgba(255,255,255,.93);border-radius:6px;
+             padding:4px 9px;line-height:1.15}
+  .slot .cap.ba{background:var(--mint-ink);color:#FFFFFF}
+  .lane .slot{aspect-ratio:9/13;border-radius:0}
+  .slotcap{font-size:13px;color:var(--ink-3);margin:11px 0 0;text-align:center}
+  .slotcap b{color:var(--ink-2);font-weight:700}
+
+  .tip{border-left:3px solid var(--red);background:var(--white);
+       border-radius:0 var(--r) var(--r) 0;padding:16px 20px;margin:16px 0 0}
+  .dont{border-left:3px solid var(--red);background:var(--red-soft);border:1px solid var(--red-line);
+        border-left-width:3px;border-radius:0 var(--r) var(--r) 0;padding:16px 20px;margin:16px 0 0}
+  .tip .lab,.dont .lab{font-family:var(--display);font-weight:800;font-size:11px;
+             letter-spacing:.16em;text-transform:uppercase;color:var(--red-ink);
+             display:inline-block;margin-bottom:8px}
+  .tip .lab{background:var(--red-soft);border-radius:5px;padding:3px 9px}
+  .tip p,.dont p{margin:0 0 .5em;font-size:15.5px;color:var(--ink-2)}
+  .tip p:last-child,.dont p:last-child{margin-bottom:0}
+  .tip strong,.dont strong{color:var(--red-ink);font-weight:700}
+  .tip ul{list-style:none;margin:10px 0 0;padding:0;
+          display:grid;grid-template-columns:1fr 1fr;gap:7px 24px}
+  @media(max-width:760px){.tip ul{grid-template-columns:1fr}}
+  .tip ul li{position:relative;padding-left:16px;font-size:15px;color:var(--ink-2)}
+  .tip ul li::before{content:"";position:absolute;left:0;top:11px;width:6px;height:1.5px;
+                     background:var(--red)}
+  .tip ul li b{color:var(--ink);font-weight:700}
+
+  .ways{list-style:none;margin:0;padding:0;counter-reset:w}
+  .ways li{position:relative;padding-left:30px;margin-bottom:11px;font-size:15.5px;color:var(--ink-2)}
+  .ways li:last-child{margin-bottom:0}
+  .ways li::before{counter-increment:w;content:counter(w);position:absolute;left:0;top:.1em;
+                   font-family:var(--display);font-weight:700;font-size:11px;color:var(--mint-ink);
+                   background:var(--mint-soft);border:1px solid var(--mint-line);border-radius:50%;
+                   width:19px;height:19px;display:flex;align-items:center;justify-content:center}
+  .ways li b{color:var(--ink);font-weight:700}
+
+  .panel h4{font-family:var(--display);font-weight:800;font-size:12px;letter-spacing:.14em;
+            text-transform:uppercase;color:var(--ink);margin:0 0 14px}
+  .check{list-style:none;padding:0;margin:0}
+  .check li{position:relative;padding-left:25px;margin-bottom:10px;font-size:15.5px;color:var(--ink-2)}
+  .check li:last-child{margin-bottom:0}
+  .check li::before{content:"\2713";position:absolute;left:0;top:0;color:var(--mint-ink);
+                    font-family:var(--display);font-weight:700;font-size:13px}
+  .check li b{color:var(--ink);font-weight:700}
+
+  .prod{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(14px,2.2vw,26px);
+        background:var(--white);border:1px solid var(--line);border-radius:var(--r);
+        padding:clamp(16px,2.2vw,24px);align-items:start}
+  @media(max-width:760px){.prod{grid-template-columns:1fr}}
+  .prod .pshot{background:var(--chrome);border-radius:13px;padding:10px;margin:0;
+               box-shadow:0 1px 0 #FFFFFF inset}
+  .prod .pshot img{display:block;width:100%;max-width:100%;height:auto;border-radius:8px}
+  .prod .pname{font-family:var(--display);font-weight:800;font-size:clamp(18px,2vw,22px);
+               letter-spacing:-.02em;margin:0 0 4px;color:var(--ink)}
+  .prod .pmeta{font-family:var(--display);font-weight:600;font-size:12px;letter-spacing:.1em;
+               text-transform:uppercase;color:var(--mint-ink);margin:0 0 16px}
+  .ing{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+  .ing li{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:baseline}
+  .ing .dot{width:7px;height:7px;border-radius:50%;background:var(--mint);margin-top:7px}
+  .ing b{display:block;font-family:var(--display);font-weight:700;font-size:14.5px;color:var(--ink);
+         line-height:1.3}
+  .ing span{display:block;font-size:14px;color:var(--ink-2)}
+  .targets{display:flex;gap:7px;flex-wrap:wrap;list-style:none;margin:16px 0 0;padding:0}
+  .targets li{font-family:var(--display);font-weight:600;font-size:10.5px;letter-spacing:.1em;
+              text-transform:uppercase;color:var(--ink-2);background:var(--off);
+              border:1px solid var(--line);border-radius:6px;padding:5px 10px}
+  .claims{margin:16px 0 0;background:var(--off);border:1px solid var(--line);border-radius:12px;
+          padding:14px 16px}
+  .claims h5{font-family:var(--display);font-weight:700;font-size:10.5px;letter-spacing:.14em;
+             text-transform:uppercase;color:var(--ink-3);margin:0 0 10px}
+  .claims ul{list-style:none;margin:0 0 11px;padding:0;display:grid;gap:5px}
+  .claims li{font-size:14.5px;color:var(--ink-2)}
+  .claims li b{font-family:var(--display);font-weight:700;color:var(--mint-ink);
+               font-variant-numeric:tabular-nums;margin-right:6px}
+  .claims .fine{margin:0;font-size:13.5px;color:var(--red-ink);line-height:1.5}
+
+  .notice{background:var(--white);border:1px solid var(--line);border-radius:var(--r);
+          padding:clamp(18px,2.4vw,26px)}
+  .notice .badge{display:inline-flex;align-items:center;gap:7px;background:var(--black);color:#FFFFFF;
+        font-family:var(--display);font-weight:700;font-size:11px;letter-spacing:.12em;
+        text-transform:uppercase;border-radius:6px;padding:6px 12px;margin-bottom:13px}
+  .notice p{margin:0 0 9px;font-size:15.5px;color:var(--ink-2)}
+  .notice p:last-child{margin-bottom:0}
+  .notice p strong{color:var(--red-ink);font-weight:700}
+  .yesno{display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,1.8vw,18px);margin-top:18px}
+  @media(max-width:700px){.yesno{grid-template-columns:1fr}}
+  .yn{border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+  .yn .ynh{font-family:var(--display);font-weight:700;font-size:12px;letter-spacing:.09em;
+           text-transform:uppercase;color:#FFFFFF;padding:10px 14px}
+  .yn.ok .ynh{background:var(--green)} .yn.no .ynh{background:var(--red-ink)}
+  .yn .ynb{padding:14px;font-size:14.5px;color:var(--ink-2)}
+  .yn.ok .ynb{background:var(--green-soft)} .yn.no .ynb{background:var(--red-soft)}
+  .yn .ynb b{display:block;color:var(--ink);font-weight:700;margin-bottom:8px;
+             font-family:var(--display);font-size:14.5px}
+  .yn ul{list-style:none;margin:0;padding:0;display:flex;gap:6px;flex-wrap:wrap}
+  .yn ul li{font-family:var(--display);font-weight:600;font-size:11px;letter-spacing:.07em;
+            text-transform:uppercase;background:#FFFFFF;border:1px solid var(--line);
+            border-radius:6px;padding:5px 10px;color:var(--ink-2)}
+
+  .capgrid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,1.8vw,20px)}
+  @media(max-width:760px){.capgrid{grid-template-columns:1fr}}
+  .capbox h5{font-family:var(--display);font-weight:800;font-size:11.5px;letter-spacing:.14em;
+             text-transform:uppercase;color:var(--ink);margin:0 0 11px}
+  .capbox p{margin:0;font-size:15.5px;color:var(--ink);font-weight:700}
+  .keyw{font-family:var(--display);font-weight:700;font-size:15px;color:var(--mint-ink);
+        background:var(--mint-soft);border:1px solid var(--mint-line);border-radius:10px;
+        padding:10px 13px;margin:0;line-height:1.6}
+  .keyw.red{color:var(--red-ink);background:var(--red-soft);border-color:var(--red-line)}
+
+  .beat{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:baseline;
+        padding:13px 0;border-top:1px solid var(--line)}
+  .beat:first-child{border-top:0}
+  .beat time{font-family:var(--display);font-weight:800;font-size:13px;letter-spacing:.06em;
+             color:var(--mint-ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+  .beat div{font-size:15.5px;color:var(--ink-2)}
+  .beat div b{color:var(--ink);font-weight:700}
+  .beat.key time{color:#FFFFFF;background:var(--black);border-radius:6px;padding:4px 9px}
+
+  footer{text-align:center;color:var(--ink-3);font-size:13px;
+         padding-block:clamp(26px,4vw,42px) 8px;line-height:1.7}
+
+
+  .notes{background:var(--white);border:1px solid var(--line);border-radius:var(--r);
+         padding:clamp(18px,2.4vw,26px);margin-bottom:clamp(20px,3vw,30px)}
+  .notes h4{font-family:var(--display);font-weight:800;font-size:12px;letter-spacing:.14em;
+            text-transform:uppercase;color:var(--ink);margin:0 0 14px}
+  .notes ol{margin:0;padding-left:20px;display:grid;gap:9px}
+  .notes li{font-size:15.5px;color:var(--ink-2)}
+  .notes li b{color:var(--ink);font-weight:700}
+
+  .sig{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;
+       background:var(--black);color:#FFFFFF;border-radius:var(--r);
+       padding:clamp(16px,2.2vw,22px) clamp(18px,2.4vw,26px);margin:16px 0 0}
+  @media(max-width:600px){.sig{grid-template-columns:1fr}}
+  .sig .sl{font-family:var(--display);font-weight:800;font-size:10.5px;letter-spacing:.16em;
+           text-transform:uppercase;color:#7FE3E0;white-space:nowrap}
+  .sig p{margin:0;font-size:15.5px;line-height:1.55;color:#E7EFEF}
+  .sig p b{color:#FFFFFF;font-weight:700}
+
+  .step{background:var(--white);border:1px solid var(--line);border-radius:var(--r);
+        overflow:hidden;margin-bottom:clamp(12px,1.8vw,16px)}
+  .step:last-child{margin-bottom:0}
+  .step .sthead{background:var(--off);border-bottom:1px solid var(--line);
+                padding:12px clamp(15px,2vw,20px);display:flex;align-items:baseline;
+                gap:10px;flex-wrap:wrap}
+  .step .sthead .sn{font-family:var(--display);font-weight:800;font-size:11px;letter-spacing:.1em;
+                    color:var(--mint-ink);background:var(--mint-soft);border:1px solid var(--mint-line);
+                    border-radius:999px;padding:4px 10px;flex:none}
+  .step .sthead h3{font-family:var(--display);font-weight:700;font-size:16px;margin:0;
+                   letter-spacing:-.01em;color:var(--ink)}
+  .step .sthead time{font-family:var(--display);font-weight:700;font-size:12px;
+                     color:var(--ink-3);font-variant-numeric:tabular-nums;margin-left:auto}
+  .step .warn{background:var(--red-soft);border-bottom:1px solid var(--red-line);
+              padding:8px clamp(15px,2vw,20px);font-family:var(--display);font-weight:700;
+              font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--red-ink)}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:0}
+  @media(max-width:760px){.cols{grid-template-columns:1fr}}
+  .col{padding:clamp(15px,2vw,20px)}
+  .col+.col{border-left:1px solid var(--line)}
+  @media(max-width:760px){.col+.col{border-left:0;border-top:1px solid var(--line)}}
+  .col h5{font-family:var(--display);font-weight:800;font-size:10.5px;letter-spacing:.15em;
+          text-transform:uppercase;margin:0 0 11px}
+  .col.dir h5{color:var(--ink-3)}
+  .col.talk h5{color:var(--mint-ink)}
+  .col ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+  .col.dir li{position:relative;padding-left:15px;font-size:15px;color:var(--ink-2)}
+  .col.dir li::before{content:"";position:absolute;left:0;top:10px;width:7px;height:1.5px;
+                      background:var(--ink-3)}
+  .col.dir li b{color:var(--ink);font-weight:700}
+  .col.talk li{font-family:var(--display);font-weight:600;font-size:14.5px;color:var(--ink);
+               background:var(--off);border-left:3px solid var(--mint);
+               border-radius:0 8px 8px 0;padding:9px 12px;line-height:1.45}
+  .col.talk li span{display:block;font-family:var(--body);font-weight:400;font-size:13px;
+                    color:var(--ink-3);margin-top:4px}
+  .lanetalk{display:none}
+  [data-lane="a"] .lanetalk[data-id="a"],
+  [data-lane="b"] .lanetalk[data-id="b"],
+  [data-lane="c"] .lanetalk[data-id="c"]{display:block}
+  #guide:not([data-lane]) .lanetalk{display:block}
+
+  .dd{display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,1.8vw,18px)}
+  @media(max-width:760px){.dd{grid-template-columns:1fr}}
+  .ddbox{background:var(--white);border:1px solid var(--line);border-radius:var(--r);
+         padding:clamp(16px,2.2vw,22px)}
+  .ddbox h5{font-family:var(--display);font-weight:800;font-size:11.5px;letter-spacing:.14em;
+            text-transform:uppercase;margin:0 0 13px}
+  .ddbox.ok h5{color:var(--green)} .ddbox.no h5{color:var(--red-ink)}
+  .ddbox ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+  .ddbox li{position:relative;padding-left:24px;font-size:15px;color:var(--ink-2)}
+  .ddbox li b{color:var(--ink);font-weight:700}
+  .ddbox.ok li::before{content:"\2713";position:absolute;left:0;top:0;color:var(--green);
+                       font-family:var(--display);font-weight:700;font-size:13px}
+  .ddbox.no li::before{content:"\2715";position:absolute;left:0;top:0;color:var(--red-ink);
+                       font-family:var(--display);font-weight:700;font-size:13px}
+
+  .refs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,1.8vw,16px)}
+  @media(max-width:760px){.refs{grid-template-columns:1fr}}
+  .ref{background:var(--white);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
+       display:block;text-decoration:none;color:inherit;transition:border-color .15s,transform .15s}
+  .ref:hover{border-color:var(--mint);transform:translateY(-2px)}
+  .ref:focus-visible{outline:2px solid var(--mint-ink);outline-offset:2px}
+  .ref img,.ref video{display:block;width:100%;aspect-ratio:9/11;object-fit:cover}
+  .ref .rb{padding:13px 15px}
+  .ref .rb b{display:block;font-family:var(--display);font-weight:700;font-size:14px;color:var(--ink);
+             margin-bottom:3px}
+  .ref .rb span{display:block;font-size:13px;color:var(--ink-3)}
+  .ref .rb .metric{color:var(--mint-ink);font-weight:700;font-family:var(--display);font-size:12.5px;
+                   margin-top:6px;display:block}
+
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,1.8vw,18px);align-items:stretch}
+  @media(max-width:860px){.two{grid-template-columns:1fr}}
+  .two .co.rule,.two .sig{margin:0;height:100%}
+  .two .sig{grid-template-columns:1fr;align-content:start;gap:12px}
+  .sigshot{margin:4px 0 0;border-radius:12px;overflow:hidden;background:#000}
+  .sigshot img{display:block;width:100%;height:auto}
+  .sigshot figcaption{font-size:12px;color:#9FB3B3;padding:8px 10px;background:var(--black)}
+  .stbody{padding:clamp(15px,2vw,20px);display:flex;flex-direction:column;gap:0}
+  .stbody .lanes{margin-top:0}
+  .cols.wp{grid-template-columns:minmax(0,.7fr) 1fr 1fr}
+  @media(max-width:860px){.cols.wp{grid-template-columns:1fr}}
+  .col.shot{padding:clamp(12px,1.6vw,16px);background:var(--off)}
+  .col.shot figure{margin:0}
+  .col.shot img{display:block;width:100%;height:auto;border-radius:10px;max-width:260px;margin-inline:auto}
+  .col.shot.wide img{max-width:100%}
+  .col.shot figcaption{font-size:12px;color:var(--ink-3);text-align:center;margin-top:7px}
+  .cols.wp.stack{grid-template-columns:1fr 1fr}
+  .cols.wp.stack .col.shot{grid-column:1 / -1;border-bottom:1px solid var(--line)}
+  .cols.wp.stack .col.shot+.col{border-left:0}
+  @media(max-width:760px){.cols.wp.stack{grid-template-columns:1fr}}
+  .refs{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+  .lanepick{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px clamp(12px,1.8vw,18px);align-items:center}
+  .lanepick button.lb{width:100%;white-space:normal;line-height:1.25}
+  .lanepick .lclear{grid-column:1 / -1;justify-self:start;padding-top:0}
+  .lanepick .lanehint{grid-column:1 / -1;margin:0}
+  .refs{grid-template-columns:repeat(auto-fill,minmax(220px,300px))}
+  @media(max-width:860px){.lanepick{grid-template-columns:1fr}}
+  .hookshow{display:grid;grid-template-columns:minmax(0,220px) 1fr;gap:clamp(14px,2vw,22px);align-items:start;margin:0 0 18px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+  @media(max-width:600px){.hookshow{grid-template-columns:1fr}}
+  .hookshow figure{margin:0}
+  .hookshow img{display:block;width:100%;max-width:220px;height:auto;border-radius:10px;margin-inline:auto}
+  .hookshow .col{padding:0}
+  .order{display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,1.8vw,18px);margin:clamp(16px,2.4vw,24px) 0 0}
+  @media(max-width:700px){.order{grid-template-columns:1fr}}
+  .ord{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:var(--white)}
+  .ord .oh{font-family:var(--display);font-weight:800;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:#FFFFFF;padding:10px 15px}
+  .ord.no .oh{background:var(--red-ink)} .ord.ok .oh{background:var(--mint-ink)}
+  .ord .ob{padding:clamp(15px,2vw,20px)}
+  .chain{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:0}
+  .chip{font-family:var(--display);font-weight:700;font-size:12.5px;border-radius:9px;padding:9px 13px;border:1px solid var(--line);background:var(--off);color:var(--ink)}
+  .chip.brand{background:var(--mint-ink);border-color:var(--mint-ink);color:#FFFFFF}
+  .chip.star{background:var(--black);border-color:var(--black);color:#FFFFFF}
+  .chip.dim{color:var(--ink-3)}
+  .arrow{font-family:var(--display);font-weight:700;color:var(--ink-3);font-size:13px}
+  .concept{margin-top:clamp(18px,2.6vw,26px)}
+  .conhead{font-family:var(--display);font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--mint-ink);margin:0 0 12px}
+  @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+  .lanes.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .lanes.one{grid-template-columns:minmax(0,1fr)}
+  @media(max-width:860px){.lanes.two{grid-template-columns:1fr}}
+  [data-lane="a"] .concept:not([data-id="a"]),
+  [data-lane="b"] .concept:not([data-id="b"]),
+  [data-lane="c"] .concept:not([data-id="c"]){display:none}
+  .sep{display:inline-block;width:1px;height:.9em;background:currentColor;opacity:.45;margin:0 .6em;vertical-align:-.1em}
+  button.lb i{font-style:normal;font-weight:600;opacity:.8;margin-left:.45em;letter-spacing:.04em}
+  /* 흐름 하나짜리 가이드: 아이디어 카드를 사진 왼쪽, 글 오른쪽으로 */
+  .lanes.one .lane{display:grid;grid-template-columns:minmax(0,280px) 1fr;align-items:stretch}
+  .lanes.one .lane .lhead{grid-column:1 / -1}
+  .lanes.one .lane .lbody{justify-content:center}
+  .lanes.one .lane p{font-size:17px}
+  @media(max-width:640px){.lanes.one .lane{grid-template-columns:1fr}}
+  /* 메디큐브식 슬로건 제목 (hero.slogan: true) */
+  .hero h1.slogan{text-transform:uppercase;letter-spacing:-.01em;line-height:1;font-size:clamp(26px,3.3vw,40px)}
+  @media(min-width:861px){.hero h1.slogan{white-space:nowrap}}
+
+  /* ===== 메디큐브식 스킨 (2026-10-06) =====
+     구성은 그대로 두고 비주얼만 바꾼다. 배경을 제품 톤으로 꽉 채우고,
+     섹션 제목은 가운데 큰 대문자, 스텝은 숫자 큰 2열 카드, 라벨은 알약. */
+  :root{
+    --tone:#E9F2F1;          /* 페이지 배경, 제품 톤 */
+    --tone-2:#DCEBE9;
+    --deep:#0E4F4C;          /* 메디큐브의 브라운 자리 */
+    --deep-2:#157571;
+    --r:20px;
+  }
+  body{background:var(--tone);background-image:none}
+  .page{max-width:1120px}
+
+  /* 히어로: 제목을 크게, 제품컷을 배경 톤 위에 */
+  .hero{grid-template-columns:1fr .85fr;padding-block:clamp(30px,5vw,70px) clamp(20px,3vw,36px)}
+  .kicker{color:var(--deep-2)}
+  h1{font-size:clamp(34px,6vw,68px);line-height:.96;letter-spacing:-.03em;
+     text-transform:uppercase;font-style:italic;font-weight:800;color:var(--deep)}
+  h1 i{color:var(--deep-2)}
+  .hero h1.slogan{font-size:clamp(34px,6vw,68px);letter-spacing:-.03em}
+  .sub{font-size:clamp(16px,1.7vw,20px);color:var(--ink-2)}
+  .heroshot{background:none;box-shadow:none;padding:0}
+  .heroshot img{max-height:clamp(280px,38vw,420px);border-radius:var(--r)}
+  .chromerule{display:none}
+
+  /* 섹션 제목: 가운데, 크게, 번호는 뺀다 */
+  .sh{justify-content:center;margin-bottom:clamp(18px,2.6vw,28px)}
+  .sh .n{display:none}
+  .sh b{font-size:clamp(26px,4vw,44px);color:var(--deep);letter-spacing:-.01em;text-align:center}
+  .lede{text-align:center;margin-inline:auto}
+
+  /* 카드: 흰 라운드, 선 대신 그림자 */
+  .card,.step,.ddbox,.lane,.notice,.prod,.ref,.ord{
+    border-color:transparent;border-radius:var(--r);
+    box-shadow:0 2px 16px rgba(14,79,76,.07)}
+
+  /* 스텝: 2열 그리드, 숫자 크게, 세로 적층 */
+  .concept>.step{margin-bottom:0}
+  .concept{display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,2vw,22px);align-items:start}
+  @media(max-width:860px){.concept{grid-template-columns:1fr}}
+  .conhead{grid-column:1 / -1;text-align:center;color:var(--deep-2)}
+  .step .sthead{background:none;border-bottom:0;padding:clamp(18px,2.2vw,24px) clamp(18px,2.2vw,24px) 6px;
+                align-items:center;gap:14px}
+  .step .sthead .sn{background:none;border:0;border-radius:0;padding:0;
+                    font-size:clamp(38px,4.4vw,52px);line-height:.85;color:var(--deep);opacity:.9}
+  .step .sthead h3{font-size:clamp(16px,1.9vw,20px);text-transform:uppercase;font-weight:800;
+                   color:var(--deep);letter-spacing:-.01em}
+  .step .warn{background:none;border-bottom:0;color:var(--ink-3);padding-top:0;
+              padding-bottom:4px;letter-spacing:.08em}
+  .cols,.cols.wp,.cols.wp.stack{grid-template-columns:1fr}
+  .col+.col{border-left:0;border-top:0}
+  .col.shot{background:none;padding-block:4px}
+  .col.shot img{max-width:100%;border-radius:12px}
+
+  /* 라벨을 알약으로 */
+  .col h5{display:inline-block;background:var(--deep);color:#FFFFFF;border-radius:999px;
+          padding:5px 14px;font-size:10.5px;letter-spacing:.12em;margin-bottom:12px}
+  .col.dir h5,.col.talk h5{color:#FFFFFF}
+  .col.talk li{background:var(--tone-2);border-left-color:var(--deep-2);border-radius:10px}
+  .col.dir li::before{background:var(--deep-2)}
+
+  /* 시그니처 바, 체크, 알약류 색 맞추기 */
+  .sig{background:var(--deep)}
+  .sig .sl{color:#9FE0DC}
+  .check li::before,.ways li::before{color:var(--deep)}
+  .ways li::before{background:var(--tone-2);border-color:transparent}
+  .keyw{color:var(--deep);background:var(--tone-2);border-color:transparent}
+  .ddbox.ok h5,.ddbox.ok li::before{color:var(--deep)}
+  .prod .pmeta{color:var(--deep-2)}
+  .ing .dot{background:var(--deep-2)}
+  .targets li{background:var(--tone-2);border-color:transparent}
+  .lane .lhead{background:var(--tone-2);border-bottom:0;font-size:14px;color:var(--deep);
+               text-transform:uppercase;font-weight:800;letter-spacing:.04em}
+  .shape{background:var(--tone-2);border-left-color:var(--deep-2);border-radius:10px}
+  .ref:hover{border-color:transparent;box-shadow:0 6px 22px rgba(14,79,76,.14)}
+
+  /* 스텝 번호: 메디큐브처럼 숫자만 크게, Step 은 위에 작게 */
+  .step .sthead .sn{display:flex;flex-direction:column;align-items:center;line-height:.8;
+                    font-size:clamp(44px,5vw,60px)}
+  .step .sthead .sn s{text-decoration:none;font-size:11px;letter-spacing:.16em;
+                      text-transform:uppercase;color:var(--ink-3);margin-bottom:5px;font-weight:700}
+  .step .sthead{align-items:center}
+  .step .sthead h3{flex:1}
+
+  /* 스텝 사진: 메디큐브처럼 작은 세로 컷. 카드 길이가 들쭉날쭉해지는 걸 막는다 */
+  .col.shot img{max-height:clamp(220px,24vw,280px);width:auto;max-width:100%;margin-inline:auto}
+  .col.shot.wide img{max-height:clamp(180px,20vw,230px)}
+  .hookshow img{max-height:260px;width:auto}
+  .lanes.one .lane{grid-template-columns:minmax(0,220px) 1fr}
+  .lanes.one .slot{aspect-ratio:9/12}
+
+  /* 카드 안 소제목도 메디큐브처럼 큼직하게 */
+  .ddbox h5,.panel h4,.capbox h5,.notes h4{font-size:clamp(15px,1.7vw,19px);letter-spacing:.02em;
+          text-transform:uppercase;color:var(--deep);margin-bottom:15px}
+  .ddbox.no h5{color:var(--red-ink)}
+  .refs{justify-content:center}
+  .capbox p,.keyw{font-size:16px}
+
+  /* 히어로: 메디큐브처럼 사진을 화면 끝까지 깔고 제목을 그 위에 */
+  .hero{position:relative;grid-template-columns:1fr;min-height:clamp(300px,34vw,440px);
+        align-content:end;gap:0;padding:0;overflow:hidden;border-radius:0;
+        margin-inline:calc(-1 * clamp(16px,3.5vw,40px));margin-bottom:clamp(22px,3vw,34px)}
+  .hero>div{position:relative;z-index:2;padding:clamp(22px,3.4vw,44px) clamp(20px,4vw,52px) clamp(24px,3.6vw,46px)}
+  .hero .heroshot{position:absolute;inset:0;z-index:0;margin:0;padding:0;border-radius:0}
+  .hero .heroshot img{width:100%;height:100%;max-height:none;object-fit:cover;object-position:50% 38%;
+                      border-radius:0;margin:0}
+  .hero::after{content:"";position:absolute;inset:0;z-index:1;
+               background:linear-gradient(180deg,rgba(233,242,241,0) 34%,rgba(233,242,241,.72) 62%,var(--tone) 97%)}
+  .hero .brandmark{margin-bottom:clamp(10px,1.4vw,16px)}
+  .hero h1{text-shadow:0 1px 0 rgba(255,255,255,.35)}
+  @media(max-width:700px){.hero{min-height:360px}
+    .hero::after{background:linear-gradient(180deg,rgba(233,242,241,0) 20%,rgba(233,242,241,.8) 52%,var(--tone) 92%)}}
+
+  /* 히어로 사진: 눈가가 보이게 아래쪽을 잡고, 로고와 kicker 는 흰 글씨로 */
+  .hero{min-height:clamp(380px,42vw,560px)}
+  .hero .heroshot img{object-position:50% 72%}
+  .hero .brandmark img{filter:brightness(0) invert(1);opacity:.95}
+  .hero .kicker{color:#FFFFFF;text-shadow:0 1px 6px rgba(0,0,0,.35)}
+  .hero::after{background:linear-gradient(180deg,rgba(233,242,241,0) 28%,rgba(233,242,241,.6) 54%,var(--tone) 92%)}
+
+  /* 제목이 눈을 가리지 않게: 사진 영역을 키우고 글자는 아래 흐린 구간에 */
+  .hero{min-height:clamp(440px,52vw,680px)}
+  .hero .heroshot img{object-position:50% 58%}
+  .hero::after{background:linear-gradient(180deg,rgba(233,242,241,0) 42%,rgba(233,242,241,.55) 62%,rgba(233,242,241,.93) 80%,var(--tone) 96%)}
+
+  /* 메디큐브 넥라인 구조: 사진은 왼쪽, 제목은 오른쪽 빈 자리 */
+  .hero{align-content:center;min-height:clamp(420px,46vw,600px)}
+  .hero .heroshot{inset:0 auto 0 0;width:64%}
+  .hero .heroshot img{object-position:52% 56%}
+  .hero::after{background:linear-gradient(90deg,rgba(233,242,241,0) 34%,rgba(233,242,241,.86) 54%,var(--tone) 66%)}
+  .hero>div{margin-left:auto;width:min(46%,520px);padding-block:clamp(20px,3vw,36px)}
+  .hero .brandmark img{filter:none;opacity:.85}
+  .hero .kicker{color:var(--deep-2);text-shadow:none}
+  .hero h1{text-shadow:none}
+  @media(max-width:860px){
+    .hero{align-content:end;min-height:420px}
+    .hero .heroshot{inset:0;width:100%}
+    .hero>div{width:100%;margin-left:0}
+    .hero::after{background:linear-gradient(180deg,rgba(233,242,241,0) 34%,rgba(233,242,241,.86) 62%,var(--tone) 92%)}
+  }
+
+  /* 제목 자리를 넓혀 줄이 잘게 쪼개지지 않게 */
+  .hero>div{width:min(54%,620px)}
+  .hero .heroshot{width:58%}
+  .hero::after{background:linear-gradient(90deg,rgba(233,242,241,0) 30%,rgba(233,242,241,.86) 50%,var(--tone) 62%)}
+  .hero h1{font-size:clamp(30px,4.4vw,52px)}
+  @media(max-width:860px){.hero>div{width:100%}.hero .heroshot{width:100%}}
+
+
+
+  /* 2026-10-07 rspot-vn 댓글: 같은 줄 스텝 박스 높이 맞춤, 레퍼런스가 하나면 가운데 */
+  .concept{align-items:stretch}
+  .refs{grid-template-columns:repeat(auto-fit,minmax(220px,300px));justify-content:center}
+
+  /* showcase: 메디큐브식 제품 정보 (2026-10-07) */
+  .showcase{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(16px,2.4vw,30px);align-items:stretch}
+  @media(max-width:760px){.showcase{grid-template-columns:1fr}}
+  .sc-shot{margin:0;border-radius:var(--r);overflow:hidden;min-height:320px;background:var(--sc-bg,var(--white))}
+  .sc-shot{display:flex;align-items:center;justify-content:center;padding:clamp(18px,3vw,40px)}
+  .sc-shot img{display:block;width:auto;max-width:78%;max-height:clamp(300px,34vw,440px);object-fit:contain;
+    -webkit-mask-image:radial-gradient(ellipse 72% 72% at 50% 50%,#000 62%,transparent 100%);mask-image:radial-gradient(ellipse 72% 72% at 50% 50%,#000 62%,transparent 100%)}
+  .sc-body{display:flex;flex-direction:column;justify-content:center;gap:14px}
+  .sc-name{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(22px,2.6vw,32px);line-height:1.1;color:var(--deep);margin:0}
+  .sc-body .pmeta{margin:0}
+  .sc-ings{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(10px,1.6vw,18px)}
+  .sc-ings figure{margin:0;text-align:center}
+  .sc-ings img{display:block;width:100%;max-width:130px;aspect-ratio:1;object-fit:cover;border-radius:50%;margin:0 auto 8px;box-shadow:0 4px 14px rgba(0,0,0,.08)}
+  .sc-ings figcaption{font-size:13.5px;font-weight:700;color:var(--deep)}
+  .sc-card{background:var(--white);border-radius:var(--r);padding:clamp(16px,2vw,22px) clamp(18px,2.2vw,26px);box-shadow:0 2px 16px rgba(0,0,0,.06)}
+  .sc-card ul{margin:0;padding-left:18px;display:grid;gap:8px;font-size:15px;color:var(--ink-2)}
+  .sc-card b{color:var(--ink)}
+
+  /* 히어로가 제품 연출컷(가로형)이면 가운데를 보여준다 */
+  .hero .heroshot img{object-position:50% 50%}
+
+  /* 제품 연출컷은 잘리면 안 된다. 히어로 높이를 사진 비율에 맞춘다 */
+  .hero{min-height:clamp(330px,30vw,430px)}
+  .hero .heroshot img{object-fit:contain;object-position:50% 50%}
+  .hero .heroshot{background:var(--tone)}
+
+  /* 같은 줄 스텝 박스 높이 맞추기 (원칙 16) */
+  .concept{align-items:stretch}
+  .concept>.step{height:100%;display:flex;flex-direction:column}
+  .concept>.step .stbody{flex:1}
+
+  /* 슬로건 제목이 길면 히어로 밖으로 넘친다. 줄바꿈을 허용하고 칸에 맞춘다
+     (2026-10-07 stickbalm-wrinkle "WHERE YOUR FACE CREASES" 가 잘림) */
+  @media(min-width:861px){.hero h1.slogan{white-space:normal}}
+  .hero h1{overflow-wrap:break-word;text-wrap:balance}
+  .hero h1.slogan{font-size:clamp(28px,3.6vw,46px);line-height:1.02}
+
+  /* 훅 지정형 (type: hook) 첫 장면 카드. 사진 위에 화면 자막을 실제 크기 느낌으로 (2026-10-07) */
+  .hk{display:grid;grid-template-columns:minmax(0,300px) 1fr;gap:clamp(16px,2.6vw,32px);align-items:center;
+      background:var(--white);border-radius:var(--r);padding:clamp(14px,2vw,22px);box-shadow:0 2px 16px rgba(0,0,0,.06)}
+  @media(max-width:700px){.hk{grid-template-columns:1fr}.hk-shot{max-width:320px;margin-inline:auto!important;width:100%}}
+  .hk-shot{position:relative;margin:0;aspect-ratio:9/13;border-radius:calc(var(--r) - 4px);overflow:hidden;background:var(--black)}
+  .hk-shot img{display:block;width:100%;height:100%;object-fit:cover}
+  .hk-over{position:absolute;left:50%;top:22%;transform:translateX(-50%);width:max-content;max-width:84%;
+           background:#FFFFFF;color:#111111;font-family:var(--body);font-weight:700;font-size:clamp(14px,1.6vw,17px);
+           line-height:1.25;text-align:center;padding:6px 10px;border-radius:7px;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+  .hk-rows{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+  .hk-rows li{display:grid;grid-template-columns:96px 1fr;gap:12px;align-items:baseline;
+              padding-bottom:12px;border-bottom:1px solid var(--tone-2,var(--line))}
+  .hk-rows li:last-child{border-bottom:0;padding-bottom:0}
+  .hk-rows s{text-decoration:none;font-family:var(--display);font-weight:700;font-size:11px;letter-spacing:.13em;
+             text-transform:uppercase;color:var(--deep-2,var(--mint-ink))}
+  .hk-rows p{margin:0;font-size:16px;color:var(--ink)}
+  @media(max-width:420px){.hk-rows li{grid-template-columns:1fr;gap:4px}}
+  .hk-var{margin-top:18px;background:var(--tone,var(--mint-soft));border-radius:calc(var(--r) - 6px);padding:12px 16px}
+  .hk-var h5{margin:0 0 6px;font-family:var(--display);font-weight:700;font-size:11px;letter-spacing:.13em;
+             text-transform:uppercase;color:var(--deep,var(--mint-ink))}
+  .hk-var ul{margin:0;padding-left:18px;display:grid;gap:4px;font-size:15px;color:var(--ink-2)}
+
+  /* 2026-10-07 폰에서 콘셉트 카드 사진과 글이 옆으로 붙어 글이 좁게 깨짐(stickbalm-wrinkle). 502줄 규칙이 640px 미디어쿼리를 덮어써서 맨 끝에서 다시 세로로 */
+  @media(max-width:640px){
+    .lanes.one .lane{grid-template-columns:1fr}
+    .lanes.one .slot{aspect-ratio:auto;max-height:420px}
+    .lanes.one .slot img{object-fit:cover;width:100%;height:100%;max-height:420px}
+    .lanes.one .lane p{font-size:16px}
+  }
+
+  /* formats: 영상 포맷 옵션 그리드 (2026-10-26) */
+  .fmts{margin:clamp(14px,2vw,22px) 0}
+  .fmts-h{font-family:var(--display);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13px;color:var(--ink-2);margin:0 0 10px}
+  .fmt-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px}
+  .fmt{background:#fff;border:1px solid var(--mint-line);border-radius:14px;padding:12px 14px;display:flex;flex-direction:column;gap:4px}
+  .fmt b{font-family:var(--display);font-size:15px}
+  .fmt span{color:var(--ink-2);font-size:13.5px;line-height:1.45}
+  .sig .sigt p{margin:0}
+  .sig .sigt p+p{margin-top:8px}
+
+  /* layout: storyboard (2026-10-26 rs-filament-kp) */
+  .sb-lab{font-family:var(--display);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:12.5px;color:var(--ink-2);margin:0 0 10px}
+  .sb-top{display:grid;grid-template-columns:minmax(220px,300px) 1fr;gap:clamp(16px,2.4vw,28px);align-items:start}
+  .sb-ref .ref{display:block;max-width:none;margin:0}
+  .sb-ref .ref video,.sb-ref .ref img{aspect-ratio:9/13;object-fit:cover;width:100%;display:block}
+  .sb-ref .rb{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+  .sb-lede p{margin:10px 0 0;font-size:14px;color:var(--ink-2);line-height:1.5}
+  .sb-lede p:first-child b{color:var(--ink)}
+  .sb-right{display:flex;flex-direction:column;gap:18px}
+  .sb-msg{background:var(--mint-soft);border:1px solid var(--mint-line);border-radius:18px;padding:clamp(16px,2vw,24px)}
+  .sb-msg .big{font-family:var(--display);font-weight:600;font-size:clamp(19px,2.1vw,24px);line-height:1.25;margin:0 0 10px}
+  .sb-msg .why{color:var(--ink-2);font-size:15px;margin:6px 0 0}
+  .sb-fmts{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+  .sb-banner{text-align:center;color:var(--ink-2);font-size:14px;margin:-6px 0 16px}
+  .sb-board{display:grid;grid-template-columns:repeat(var(--n),1fr);gap:14px;align-items:stretch}
+  .sb-step{background:#fff;border-radius:18px;padding:14px;display:flex;flex-direction:column;gap:10px;box-shadow:0 1px 0 rgba(0,0,0,.03)}
+  .sb-head{display:flex;align-items:center;gap:10px;min-height:44px}
+  .sb-n{flex:none;width:30px;height:30px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:var(--display);font-weight:700}
+  .sb-head h3{margin:0;font-size:15.5px;line-height:1.25}
+  .sb-shot{margin:0;border-radius:12px;overflow:hidden;aspect-ratio:9/13;background:var(--mint-soft)}
+  .sb-shot img{width:100%;height:100%;object-fit:cover;display:block}
+  .sb-cta{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px}
+  .sb-cta span{font-size:44px}
+  .sb-cta b{font-family:var(--display);font-size:16px}
+  .sb-do,.sb-say{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;font-size:13.5px;line-height:1.45}
+  .sb-do li{padding-left:12px;position:relative}
+  .sb-do li:before{content:"";position:absolute;left:0;top:.6em;width:5px;height:5px;border-radius:50%;background:var(--mint)}
+  .sb-say{margin-top:auto}
+  .sb-say li{background:var(--mint-soft);border-left:3px solid var(--mint);border-radius:8px;padding:8px 10px;font-weight:600}
+  .sb-say li span{display:block;font-weight:400;font-size:12px;color:var(--ink-2);margin-top:2px}
+  .sb-rules{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .sb-rules .ddbox{margin:0}
+  .sb-rules .ddbox.must h5{color:var(--ink)}
+  .sb-cap{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .sb-cap .capbox{margin:0}
+  @media (max-width:900px){
+    .sb-board{grid-template-columns:repeat(2,1fr)}
+    .sb-rules{grid-template-columns:1fr}
+  }
+  @media (max-width:560px){
+    .sb-top{grid-template-columns:1fr}
+    .sb-ref{max-width:300px;margin:0 auto}
+    .sb-board{grid-template-columns:1fr}
+    .sb-shot{max-width:260px;width:100%;margin:0 auto}
+    .sb-cap{grid-template-columns:1fr}
+    .sb-fmts{grid-template-columns:1fr 1fr}
+  }
+  /* 문장 줄바꿈 + 여백 (2026-10-26) */
+  .ln{display:block}
+  .ln+.ln{margin-top:4px}
+  .sb-do{gap:10px;font-size:14px;line-height:1.5}
+  .sb-say{gap:8px}
+  .sb-msg .why{line-height:1.6}
+  .sb-rules li{line-height:1.5}
+  .sb-rules ul{display:flex;flex-direction:column;gap:10px}
+  .ing li span .ln+.ln{margin-top:2px}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="hero">
+    <div>
+      <div class="brandmark"><img src="https://mina041336-ops.github.io/vt-guide-preview/rs-filament-kp/img/logo-black.png" alt="VT Cosmetics"></div>
+      <p class="kicker">CICA Reedle Shot 100<span class="sep"></span>TikTok Shop Brief</p>
+      <h1 class="slogan">NOT BLACKHEADS<br><i>Sebaceous filaments.</i></h1>
+      <p class="sub">Stop squeezing your nose. Reedle Shot goes on at night.</p>
+    </div>
+    <figure class="heroshot">
+      <img src="https://mina041336-ops.github.io/vt-guide-preview/rs-filament-kp/img/product-bottle.jpg" alt="VT CICA Reedle Shot 100, a white bottle with a silver pump">
+    </figure>
+  </header>
+
+  <div class="chromerule"></div>
+
+  <section class="sb-top">
+      <div class="sb-ref">
+        <p class="sb-lab">Watch this first</p>
+        <a class="ref" href="https://www.tiktok.com/@findyourseon/video/7525447733331774775" target="_blank" rel="noopener"><video src="https://mina041336-ops.github.io/vt-guide-preview/rs-filament-kp/img/ref-seon.mp4" autoplay muted loop playsinline aria-label="Creator pulling his nose wide up to the camera, captioned these are not blackheads"></video>
+          <div class="rb"><b>@findyourseon</b><span class="metric">9.6M views, 1.28% saves</span></div>
+        </a>
+        <div class="sb-lede"><p><b>He pulls his nose right up to the camera and says it in the first second.</b></p><p>Do the same with your own nose.</p></div>
+      </div>
+      <div class="sb-right">
+        <div class="sb-msg">
+          <p class="big">Those dots on your nose? <b>Not blackheads. Sebaceous filaments.</b></p>
+          <p class="why"><span class="ln">Everyone has them.</span><span class="ln">Squeeze them and they fill right back up.</span><span class="ln">Blackheads are the ones that are clogged and dark on top.</span></p><p class="why">Say what they really are and stop pulling them.</p>
+        </div>
+        <p class="sb-lab">Pick a format</p>
+        <div class="sb-fmts"><div class="fmt"><b>Reply to a comment</b><span>Start with Replying to @... on a comment about blackheads or pores</span></div><div class="fmt"><b>Story time ⭐</b><span>Talk to the camera like you're telling a friend</span></div><div class="fmt"><b>Stitch</b><span>Stitch a pore strip or squeezing video, then say why not</span></div><div class="fmt"><b>Duet</b><span>Duet a nose close-up and react next to it</span></div></div>
+      </div>
+  </section>
+
+  <section>
+    <div class="sh"><b>How to shoot it</b></div>
+    <p class="sb-banner">These are talking points, not a script. Say it your way.</p>
+    <div class="sb-board" style="--n:4">
+      <article class="sb-step">
+        <div class="sb-head"><span class="sb-n">1</span><h3>Show us your nose</h3></div>
+        <figure class="sb-shot"><img src="https://mina041336-ops.github.io/vt-guide-preview/rs-filament-kp/img/step-face-hook.jpg" alt="Creator pulling his nose wide right up to the camera, captioned these are not blackheads"></figure>
+        <ul class="sb-do"><li><span class="ln">Flash <b>close-ups</b> of your nose in an inset.</span><span class="ln"><b>The more examples you show, the stronger the hook.</b></span></li><li>Call them what they are: <b>not blackheads, sebaceous filaments</b>.</li><li>Put it on screen as text: <b>BLACKHEADS ✕ SEBACEOUS FILAMENTS ✓</b></li></ul><ul class="sb-say"><li>"those aren't blackheads. they're sebaceous filaments"</li><li>"and squeezing them makes it worse"<span>Keep it to one or two lines</span></li><li>"my pores were bigger than my boyfriend's"<span>Or open with this one</span></li></ul>
+      </article>
+      <article class="sb-step">
+        <div class="sb-head"><span class="sb-n">2</span><h3>Don't pull them, don't peel them</h3></div>
+        <figure class="sb-shot"><img src="https://mina041336-ops.github.io/vt-guide-preview/rs-filament-kp/img/step-why.jpg" alt="Creator saying stop, your pore strips are making your pores look bigger, with a used pore strip in a box below"></figure>
+        <ul class="sb-do"><li><span class="ln">Say what you used to do.</span><span class="ln"><b>Squeezing, pore strips, peel-off masks.</b></span></li><li><span class="ln">Pulling them out doesn't work.</span><span class="ln">They <b>fill right back up</b> in a few days.</span></li><li>Hold up the strip or the mask you used to use, then put it away.</li></ul><ul class="sb-say"><li>"I used to pull these out with pore strips every week. they just came back"</li></ul>
+      </article>
+      <article class="sb-step">
+        <div class="sb-head"><span class="sb-n">3</span><h3>Every night, pat it in</h3></div>
+        <figure class="sb-shot"><img src="https://mina041336-ops.github.io/vt-guide-preview/rs-filament-kp/img/step-face-dot.jpg" alt="Creator with Reedle Shot dotted across her face, holding the bottle"></figure>
+        <ul class="sb-do"><li>Show your night routine with <b>Reedle Shot right after cleansing</b>.</li><li><span class="ln"><b>Pat it</b> over your nose and cheeks.</span><span class="ln">Don't rub.</span></li></ul><ul class="sb-say"><li>"this is the only thing I changed"</li><li>"it works on the build-up around the pore, so they just look smaller"<span>Say why Reedle Shot</span></li></ul>
+      </article>
+      <article class="sb-step">
+        <div class="sb-head"><span class="sb-n">4</span><h3>Link the product</h3></div>
+        <div class="sb-shot sb-cta"><span>🛒</span><b>Orange cart</b></div>
+        <ul class="sb-do"><li>Tag the <b>Reedle Shot product link</b> and point to the <b>orange cart</b>.</li><li>Mention the <b>sale</b> and tell them to <b>check the coupon</b>.</li></ul><ul class="sb-say"><li>"it's on a big sale and keeps selling out. check the coupon before you buy"</li><li>"it's on a huge sale right now and I don't know when it ends"</li><li>"it's in the orange cart if you want to try it"</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="sb-rules">
+    <div class="ddbox must"><h5>Must-haves</h5><ul class="check"><li>Your <b>own nose up close</b> in the first shot ⭐</li><li>Say <b>not blackheads, sebaceous filaments</b> out loud and put it on screen ⭐</li><li>The <b>Reedle Shot product link</b> tagged ⭐</li></ul></div>
+    <div class="ddbox ok"><h5>Do</h5><ul><li><span class="ln">Show <b>bare skin</b> in every close-up.</span><span class="ln">No filters or smoothing</span></li><li>Say why <b>Reedle Shot</b></li><li><span class="ln">Got a question in the comments?</span><span class="ln">Film the next video as a <b>reply to it</b></span></li><li>Reply to comments for the first 48 hours</li></ul></div>
+    <div class="ddbox no"><h5>Don't</h5><ul><li><b>No unboxing.</b> Skip the PR box</li><li>Don't open holding the bottle and talking</li><li>Don't talk about <b>needles, microneedling or tingling</b></li><li>Don't say another brand doesn't work</li></ul></div>
+  </section>
+  <section class="sb-cap">
+    <div class="card capbox"><h5>Caption</h5><p><span class="ln"><b>Don't mention the brand</b> in your caption.</span><span class="ln">Just talk about your nose.</span></p></div>
+    <div class="card capbox"><h5>Hashtags</h5><p class="keyw">#blackheads #sebaceousfilaments</p></div>
+  </section>
+
+  <section>
+    <div class="sh"><b>The product, in short</b></div>
+    <div class="prod">
+      <figure class="pshot">
+        <img src="https://mina041336-ops.github.io/vt-guide-preview/rs-filament-kp/img/product-bottle.jpg" alt="VT CICA Reedle Shot 100 bottle">
+      </figure>
+      <div>
+        <p class="pname">CICA Reedle Shot 100</p>
+        <p class="pmeta">Booster serum<span class="sep"></span>Pore care<span class="sep"></span>1.69 fl oz / 50 ml<span class="sep"></span>44.6M units sold</p>
+
+        <ul class="ing">
+          <li><span class="dot"></span><div>
+            <b>What it is</b>
+            <span><span class="ln">A pore care serum with tiny CICA reedles.</span><span class="ln">It works on the build-up around pores so they look less noticeable.</span></span>
+          </div></li>
+          <li><span class="dot"></span><div>
+            <b>Why 100</b>
+            <span><span class="ln">The gentlest Reedle Shot.</span><span class="ln">Everyday pore care for nose, cheeks and forehead.</span></span>
+          </div></li>
+          <li><span class="dot"></span><div>
+            <b>Texture</b>
+            <span><span class="ln">Light, watery serum.</span><span class="ln">Not greasy, even on an oily T-zone.</span></span>
+          </div></li>
+          <li><span class="dot"></span><div>
+            <b>Why pores look bigger</b>
+            <span><span class="ln">Build-up sits around pores and makes them look bigger.</span><span class="ln">CICA reedles work on that layer, so pores look less noticeable.</span></span>
+          </div></li>
+          <li><span class="dot"></span><div>
+            <b>Pore routine</b>
+            <span><span class="ln">Wash your face and pat it dry.</span><span class="ln">Tap Reedle Shot 100 into your pore areas.</span><span class="ln">Your serum and moisturizer on top.</span><span class="ln">Use it at night, sunscreen the next morning.</span></span>
+          </div></li>
+        </ul>
+
+        <ul class="targets">
+          <li>For visible pores</li>
+          <li>CICA Reedle</li>
+          <li>Light serum</li>
+          <li>Nose, cheeks and forehead</li>
+        </ul>
+
+        <div class="claims">
+          <h5>Brand clinical data: KSRC, 22 people, 2 weeks</h5>
+          <ul>
+            <li><b>−36.04%</b>Pore count after 1 use</li>
+            <li><b>−38.08%</b>Pore count after 2 weeks</li>
+            <li><b>95.45%</b>Said their skin felt smoother</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footmark"><img src="https://mina041336-ops.github.io/vt-guide-preview/rs-filament-kp/img/logo-black.png" alt="VT Cosmetics"></div>
+    Global Marketing<br>
+    CICA Reedle Shot 100<span class="sep"></span>TikTok Shop Brief<span class="sep"></span>2026
+  </footer>
+</div>
+
+<script>
+  (function () {
+    var guide = document.getElementById('guide');
+    var btns = document.querySelectorAll('[data-set]');
+    var pick = document.querySelector('.lanepick');
+    var hint = document.getElementById('lanehint');
+    var KEY = "vt-guide-rs-filament-kp";
+    var IDS = ["a"];
+    var HINTS = {"": "👆 Tap A. Only your concept's steps stay on the page.", "a": "✓ Concept A: Not blackheads."};
+    if (!pick) { guide.setAttribute('data-lane', IDS[0]); return; }
+    function apply(lane) {
+      if (IDS.indexOf(lane) >= 0) {
+        guide.setAttribute('data-lane', lane);
+        pick.classList.add('chosen');
+      } else {
+        lane = '';
+        guide.removeAttribute('data-lane');
+        pick.classList.remove('chosen');
+      }
+      hint.textContent = HINTS[lane];
+      btns.forEach(function (b) {
+        if (b.classList.contains('lb')) {
+          b.setAttribute('aria-pressed', b.dataset.set === lane ? 'true' : 'false');
+        }
+      });
+    }
+    btns.forEach(function (b) {
+      b.addEventListener('click', function () {
+        var lane = b.dataset.set;
+        apply(lane);
+        try { lane ? localStorage.setItem(KEY, lane) : localStorage.removeItem(KEY); } catch (e) {}
+      });
+    });
+    var saved = '';
+    try { saved = localStorage.getItem(KEY) || ''; } catch (e) {}
+    if (saved) apply(saved);
+  })();
+</script>
+</body>
+</html>
